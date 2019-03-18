@@ -14,7 +14,7 @@ end
 
 def printer(names_array)
   batch_badge_creator(names_array).each do |name|
-    puts name 
+    puts name
   end
   assign_rooms(names_array).each do |item|
 binding.pry
