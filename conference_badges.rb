@@ -14,11 +14,9 @@ end
 
 def printer(names_array)
   batch_badge_creator(names_array).each do |badge_message|
-    binding.pry
     puts badge_message
   end
   assign_rooms(names_array).each do |room_assignment|
-
     puts room_assignment
   end
 end
