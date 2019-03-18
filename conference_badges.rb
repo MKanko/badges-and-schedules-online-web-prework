@@ -20,7 +20,7 @@ def printer(names_array)
     puts i
   end
   assign_rooms(names_array).each do |item|
-    binding.pry 
+    binding.pry
     puts item
   end
 end
