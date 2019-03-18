@@ -10,8 +10,8 @@ end
 
 def assign_rooms(names_array)
   assignment_array = Array.new
-  names_array.each_with_index {|item, index| assignment_array.push "Hello, #{item}! You'll be assigned to room #{index + 1}!"}
-  return assignment_array
+  names_array.each_with_index.collect {|item, index| "Hello, #{item}! You'll be assigned to room #{index + 1}!"}
+#  return assignment_array
 end
 
 
@@ -20,7 +20,7 @@ def printer(names_array)
     puts i
   end
   assign_rooms(names_array).each do |item|
-    binding.pry
+#binding.pry
     puts item
   end
 end
